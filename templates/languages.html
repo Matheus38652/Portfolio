@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Linguagens{% endblock %}
+{% block content %}
+<div class="container-xxl mt-4">
+    <section id="languages" class="languages mb-4 p-4 bg-white rounded shadow-sm">
+        <h2 class="section-title h4">Principais Linguagens</h2>
+        <ul class="list-unstyled">
+            <li class="bg-light p-2 mb-2 rounded" onclick="toggleInfo('python-info')">● Python
+                <div id="python-info" style="display: none;">
+                    <p>Sou um desenvolvedor com maior experiência em Python, tendo realizado alguns projetos nessa linguagem.
+                    </p>
+                </div>
+            </li>
+            <li class="bg-light p-2 mb-2 rounded" onclick="toggleInfo('cpp-info')">● C++
+                <div id="cpp-info" style="display: none;">
+                    <p>Tenho um conhecimento não muito abrangente nessa linguagem</p>
+                </div>
+            </li>
+            <li class="bg-light p-2 mb-2 rounded" onclick="toggleInfo('mysql-info')">● MySQL
+                <div id="mysql-info" style="display: none;">
+                    <p>Tenho conhecimento na criação de databases e na implementação de dados nas tabelas</p>
+                </div>
+            </li>
+            <li class="bg-light p-2 mb-2 rounded" onclick="toggleInfo('hardware-info')">● Java
+                <div id="hardware-info" style="display: none;">
+                    <p>Tenho conhecimento em realizar algumas funções em linguagem java</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<script>
+function toggleInfo(id) {
+    var info = document.getElementById(id);
+    if (info.style.display === "none") {
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
+}
+</script>
+{% endblock %}
