@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section id="about" class="about mb-4 p-4 bg-white rounded shadow-sm">
+    <img src="{{ url_for('static', filename='perfil.jpg') }}" alt="Foto de Perfil" class="profile-pic d-block mx-auto mb-3">
+    <h2>Nome</h2>
+    <p>Matheus da Silva Santos<br>
+    <h2>Cursando</h2>
+    <p>4º Semestre - Ciências da computação</p>
+    <h2>Cargo</h2>
+    <p>Estagiário - Suporte T.I</p>
+</section>
+{% endblock %}

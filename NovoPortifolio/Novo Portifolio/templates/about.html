@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Sobre{% endblock %}
+{% block content %}
+<section id="about" class="about mb-4 p-4 bg-white rounded shadow-sm">
+    <img src="{{ url_for('static', filename='perfil.jpg') }}" alt="Foto de Perfil" class="profile-pic d-block mx-auto mb-3">
+    <h2 class="section-title h4">Sobre Mim</h2>
+    <p>Olá,me chamo Matheus da Silva Santos e tenho 20 anos.<br>
+    Tenho conhecimento em diversas áreas voltadas a informática, como Python, C++, MySQL, Java e Hardware.<br>
+    Já no requisito idiomas, tenho na bagagem um inglês de nível básico, porém estou buscando aperfeiçoá-lo cada vez mais.</p>
+</section>
+{% endblock %}
